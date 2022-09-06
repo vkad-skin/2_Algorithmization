@@ -9,4 +9,4 @@
 
 <p dir="auto">Файл с заданиями:</p>
   
-<a href="https://github.com/vkad-skin/2_Algorithmization/blob/main/Practice%20(tasks).pdf<a/>  
+<a href="https://github.com/vkad-skin/2_Algorithmization/blob/main/Practice%20(tasks).pdf">Practice (tasks).pdf<a/>  
