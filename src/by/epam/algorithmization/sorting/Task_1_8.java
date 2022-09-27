@@ -252,21 +252,28 @@ public class Task_1_8 {
 		 * выбором.
 		 */
 
-		int mas[] = { 2, 3, 6, 6, 7, 8, 8, 9, 10, 11, 12 };
+		int mas[] = { 2, 3, 6, 15, 7, 8, 8, 9, 10, 11, 12 };
 
-		int container;
+		int arrayElement;
+		int arrayElementNumber;
 
 		System.out.print("\nОтсортированный массив :");
 
 		for (int i = 0; i < mas.length; i++) {
-
-			for (int j = i; j < mas.length; j++) {
-
-				if (mas[i] < mas[j]) {
-
-					container = mas[i];
-					mas[i] = mas[j];
-					mas[j] = container;
+			
+			arrayElement = mas[i];
+			arrayElementNumber = i;
+			
+			for (int j = i + 1; j < mas.length; j++) {
+				
+				if(arrayElement < mas[j]) {
+					arrayElement = mas[j];
+					arrayElementNumber = j;
+				}
+				
+				if (mas.length - 1 == j) {
+					mas[arrayElementNumber] = mas[i];
+					mas[i] = arrayElement;
 				}
 			}
 			System.out.print(mas[i] + " ");
